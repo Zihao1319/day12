@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first springboot page</title>
+  </head>
+  <body>
+    <h1>Welcome to Springboot lesson 2!</h1>
+    <br />
+    <div>
+      Current time: <span data-th-text="${currTime}"></span>
+      <br />
+      <div>
+        <span data-th-if="${currHour le 12}">Good morning!</span>
+        <span data-th-if="${currHour gt 12}">Good afternoon!</span>
+      </div>
+    </div>
+  </body>
+</html>
